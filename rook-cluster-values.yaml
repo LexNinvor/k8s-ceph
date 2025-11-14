@@ -1,0 +1,23 @@
+toolbox:
+  enabled: true
+
+configOverride: |
+  [global]
+  osd_pool_default_pg_num = 8
+  osd_pool_default_pgp_num = 8
+
+cephClusterSpec:
+  storage:
+    useAllNodes: false
+    useAllDevices: false
+
+    nodes:
+      - name: "deb2"
+        devices:
+          - name: "sda"
+      - name: "deb3" 
+        devices:
+          - name: "sda"
+      - name: "deb4"
+        devices:
+          - name: "sdd"
