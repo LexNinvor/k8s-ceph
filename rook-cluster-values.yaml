@@ -22,10 +22,10 @@ cephClusterSpec:
           - name: "sdb"
       - name: "deb3" 
         devices:
-          - name: "sdb"
+          - name: "sda"
       - name: "deb4"
         devices:
-          - name: "sdb"
+          - name: "sda"
 
 cephBlockPools:
   - name: ceph-blockpool
