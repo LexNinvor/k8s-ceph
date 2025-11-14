@@ -13,8 +13,8 @@ cephClusterSpec:
   mgr:
     count: 2
   storage:
-    useAllNodes: false
-    useAllDevices: false
+    useAllNodes: true
+    useAllDevices: true
 
     nodes:
       - name: "deb2"
